@@ -2,7 +2,7 @@
   "name": "ravenous",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://callum-whatley.github.io/DineAround/",
+  "homepage": "https://callum-whatley.github.io/DineAround",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
