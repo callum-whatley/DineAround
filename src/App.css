@@ -3,7 +3,7 @@
 html {
   font-size: 18px;
 }
-
+/* Adjusts for smaller screen size */
 @media only screen and (max-width: 560px) {
   html {
     font-size: 15px;
