@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d4b19f461cdbe2feb7d60755a87b590e",
+    "revision": "3a2a0fe4facdcff799fa1dc92c957d34",
     "url": "/DineAround/index.html"
   },
   {
-    "revision": "7694382add2f91fc4d19",
-    "url": "/DineAround/static/css/main.73d0b477.chunk.css"
+    "revision": "38eeb581d717c07e4cfd",
+    "url": "/DineAround/static/css/main.08cc9962.chunk.css"
   },
   {
     "revision": "bca943ab24bdfcd15706",
     "url": "/DineAround/static/js/2.f0927397.chunk.js"
   },
   {
-    "revision": "7694382add2f91fc4d19",
-    "url": "/DineAround/static/js/main.21f18ba2.chunk.js"
+    "revision": "38eeb581d717c07e4cfd",
+    "url": "/DineAround/static/js/main.28c6c208.chunk.js"
   },
   {
     "revision": "ea934b94d5150f5b5208",
