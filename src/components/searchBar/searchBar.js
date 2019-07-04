@@ -50,6 +50,7 @@ class SearchBar extends React.Component {
     render() {
         return (
             <div className="SearchBar">
+                <h1>Dine Around</h1>
                  <div className="SearchBar-sort-options">
                     <ul>
                         {this.renderSortByOptions()}

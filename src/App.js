@@ -23,7 +23,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Dine Around</h1>
         <SearchBar searchYelp={this.searchYelp} />
         <BusinessList businesses={this.state.businesses} /> 
       </div>

@@ -4,6 +4,8 @@
     justify-content: space-between;
     width: 16.66rem;
     margin: 0 .5rem 2.3rem .5rem;
+    padding: 0.66rem;
+    background-color: #cca353;
   }
   
   .Business .image-container {
@@ -42,7 +44,6 @@
   }
   
   .Business-reviews h3 {
-    color: #CCA353;
     font-weight: 600;
   }
   
