@@ -40,12 +40,16 @@ class SearchBar extends React.Component {
     }
     handleKeyPress(e) {
         if (e.key === 'Enter') {
-            this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
+            if(this.state.location) {
+                this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
+            }
         }
     }
     handleSearch(event) {
-        this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
-        event.preventDefault();
+        if(this.state.term || this.state.location) {
+            this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
+            event.preventDefault();
+        }
     }
     renderSortByOptions() {
         return Object.keys(this.sortByOptions).map(sortByOption => {
@@ -56,19 +60,21 @@ class SearchBar extends React.Component {
     render() {
         return (
             <div className="SearchBar">
-                <h1>Dine Around</h1>
-                 <div className="SearchBar-sort-options">
-                    <ul>
-                        {this.renderSortByOptions()}
-                    </ul>
-                </div>
-                <div className="SearchBar-fields">
-                    <input onKeyPress={this.handleKeyPress} onChange={this.handleTermChange} placeholder="Search Businesses" />
-                    <input onKeyPress={this.handleKeyPress} onChange={this.handleLocationChange} placeholder="Where?" />
-                </div>
-                <div className="SearchBar-submit">
-                    <a onClick={this.handleSearch}>Let's Go</a>
-                </div>
+                <span>
+                    <h1>Dine Around</h1>
+                    <div className="SearchBar-sort-options">
+                        <ul>
+                            {this.renderSortByOptions()}
+                        </ul>
+                    </div>
+                    <div className="SearchBar-fields">
+                        <input onKeyPress={this.handleKeyPress} onChange={this.handleTermChange} placeholder="What are you hungry for?" />
+                        <input onKeyPress={this.handleKeyPress} onChange={this.handleLocationChange} placeholder="Where are you located?" />
+                    </div>
+                    <div className="SearchBar-submit">
+                        <a onClick={this.handleSearch}>Let's Go</a>
+                    </div>
+                </span>
             </div>
         );
     }

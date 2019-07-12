@@ -12,7 +12,19 @@
     <title>Dine Around</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+      <script>
+          if ('geolocation' in navigator) {
+            console.log('Geolocation is available');
+            navigator.geolocation.getCurrentPosition(function(position) {
+             const coords = position.coords;
+             console.log(coords);
+
+            });
+          } else {
+            console.log('Geolocation is not available');
+          }
+        </script>
+    <noscript>You need to enable JavaScript for this website to function properly</noscript>
     <div id="root"></div>
   </body>
 </html>
