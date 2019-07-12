@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DineAround/static/css/main.2b0454e7.chunk.css",
+    "main.css": "/DineAround/static/css/main.a793d2c3.chunk.css",
     "main.js": "/DineAround/static/js/main.cad85c7c.chunk.js",
     "main.js.map": "/DineAround/static/js/main.cad85c7c.chunk.js.map",
     "runtime~main.js": "/DineAround/static/js/runtime~main.929bd3ad.js",
@@ -8,9 +8,9 @@
     "static/js/2.5dbd8ed4.chunk.js": "/DineAround/static/js/2.5dbd8ed4.chunk.js",
     "static/js/2.5dbd8ed4.chunk.js.map": "/DineAround/static/js/2.5dbd8ed4.chunk.js.map",
     "index.html": "/DineAround/index.html",
-    "precache-manifest.be5a0d0643dce450e321e0763d75407d.js": "/DineAround/precache-manifest.be5a0d0643dce450e321e0763d75407d.js",
+    "precache-manifest.5739df1d415ed0223551efe861ad68d0.js": "/DineAround/precache-manifest.5739df1d415ed0223551efe861ad68d0.js",
     "service-worker.js": "/DineAround/service-worker.js",
-    "static/css/main.2b0454e7.chunk.css.map": "/DineAround/static/css/main.2b0454e7.chunk.css.map",
+    "static/css/main.a793d2c3.chunk.css.map": "/DineAround/static/css/main.a793d2c3.chunk.css.map",
     "static/media/searchBar.css": "/DineAround/static/media/search_mobile.968708c4.jpg"
   }
 }
