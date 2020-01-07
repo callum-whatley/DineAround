@@ -16,12 +16,13 @@ class SearchBar extends React.Component {
         this.handleSearch = this.handleSearch.bind(this);
         this.handleKeyPress = this.handleKeyPress.bind(this);
 
+        this.sortByOptions = {
+            'Best Match': 'best-match',
+            'Highest Rated': 'rating',
+            'Most Reviewed': 'review_count'
+        }; 
     }
-    sortByOptions = {
-        'Best Match': 'best-match',
-        'Highest Rated': 'rating',
-        'Most Reviewed': 'review_count'
-    }; 
+    
     getSortByClass(sortByOption) {
         if( this.state.sortBy === sortByOption) {
             return 'active'
@@ -72,7 +73,7 @@ class SearchBar extends React.Component {
                         <input onKeyPress={this.handleKeyPress} onChange={this.handleLocationChange} placeholder="Where are you located?" />
                     </div>
                     <div className="SearchBar-submit">
-                        <a onClick={this.handleSearch}>Let's Go</a>
+                        <button onClick={this.handleSearch}>Let's Go</button>
                     </div>
                 </span>
             </div>

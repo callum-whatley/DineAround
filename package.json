@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://callum-whatley.github.io/DineAround",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "geocoder": "^0.2.3",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",

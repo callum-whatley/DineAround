@@ -1,4 +1,6 @@
-const apiKey = 'I_9yi_enpmsAMSZN-FxiH3jvh8bXdfZZDBN4OHP4PDTKBasFFyx3AFdyyz5LMJb1R0bLeqzclSInvbMUkxbWjixRywXaRXkuM1IorlojS5wXzRiQKdbaqkZ6oRj8XHYx';
+const apiKey = process.env.REACT_APP_API_KEY;
+//const apiKey = 'I_9yi_enpmsAMSZN-FxiH3jvh8bXdfZZDBN4OHP4PDTKBasFFyx3AFdyyz5LMJb1R0bLeqzclSInvbMUkxbWjixRywXaRXkuM1IorlojS5wXzRiQKdbaqkZ6oRj8XHYx';
+
 
 const Yelp = {
     search(term, location, sortBy) {
