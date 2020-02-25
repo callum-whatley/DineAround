@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <title>Dine Around</title>
+  </head>
+  <body>
+      <script>
+          if ('geolocation' in navigator) {
+            console.log('Geolocation is available');
+            navigator.geolocation.getCurrentPosition(function(position) {
+             const coords = position.coords;
+             console.log(coords);
+
+            });
+          } else {
+            console.log('Geolocation is not available');
+          }
+        </script>
+    <noscript>You need to enable JavaScript for this website to function properly</noscript>
+    <div id="root"></div>
+  </body>
+</html>
