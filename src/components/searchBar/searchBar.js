@@ -1,6 +1,6 @@
 import React from 'react';
 import './searchBar.css';
-
+import LocationSearchInput from './auto.js';
 
 
 class SearchBar extends React.Component {
@@ -15,12 +15,13 @@ class SearchBar extends React.Component {
         this.handleTermChange = this.handleTermChange.bind(this);
         this.handleSearch = this.handleSearch.bind(this);
         this.handleKeyPress = this.handleKeyPress.bind(this);
-
+        
         this.sortByOptions = {
             'Best Match': 'best-match',
             'Highest Rated': 'rating',
             'Most Reviewed': 'review_count'
-        }; 
+        };
+         
     }
     
     getSortByClass(sortByOption) {
@@ -39,11 +40,18 @@ class SearchBar extends React.Component {
     handleLocationChange(event) {
         this.setState({ location: event.target.value });
     }
+    handleLocationSuggestion(address) {
+        this.setState({ location: address });
+    }
     handleKeyPress(e) {
-        if (e.key === 'Enter') {
-            if(this.state.location) {
-                this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
+        try {
+            if (e.key === 'Enter') {
+                if(this.state.location) {
+                    this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
+                }
             }
+        }catch(e) {
+            console.log(e);
         }
     }
     handleSearch(event) {
@@ -70,7 +78,7 @@ class SearchBar extends React.Component {
                     </div>
                     <div className="SearchBar-fields">
                         <input onKeyPress={this.handleKeyPress} onChange={this.handleTermChange} placeholder="What are you hungry for?" />
-                        <input onKeyPress={this.handleKeyPress} onChange={this.handleLocationChange} placeholder="Where are you located?" />
+                        <LocationSearchInput locationSuggestion={this.handleLocationSuggestion.bind(this)} handleSearch={this.handleKeyPress.bind(this)}/>
                     </div>
                     <div className="SearchBar-submit">
                         <button onClick={this.handleSearch}>Let's Go</button>
