@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/DineAround/static/css/main.67000b8e.chunk.css",
-    "main.js": "/DineAround/static/js/main.c13a1760.chunk.js",
-    "main.js.map": "/DineAround/static/js/main.c13a1760.chunk.js.map",
+    "main.css": "/DineAround/static/css/main.d14d7221.chunk.css",
+    "main.js": "/DineAround/static/js/main.9c9833b3.chunk.js",
+    "main.js.map": "/DineAround/static/js/main.9c9833b3.chunk.js.map",
     "runtime~main.js": "/DineAround/static/js/runtime~main.929bd3ad.js",
     "runtime~main.js.map": "/DineAround/static/js/runtime~main.929bd3ad.js.map",
-    "static/js/2.ff4c7efc.chunk.js": "/DineAround/static/js/2.ff4c7efc.chunk.js",
-    "static/js/2.ff4c7efc.chunk.js.map": "/DineAround/static/js/2.ff4c7efc.chunk.js.map",
+    "static/js/2.c43eaabb.chunk.js": "/DineAround/static/js/2.c43eaabb.chunk.js",
+    "static/js/2.c43eaabb.chunk.js.map": "/DineAround/static/js/2.c43eaabb.chunk.js.map",
     "index.html": "/DineAround/index.html",
-    "precache-manifest.cd6cc4ad944c93e45e19182d6a0d4d7f.js": "/DineAround/precache-manifest.cd6cc4ad944c93e45e19182d6a0d4d7f.js",
+    "precache-manifest.3380d9746305e14383ce0e82d4cca4ff.js": "/DineAround/precache-manifest.3380d9746305e14383ce0e82d4cca4ff.js",
     "service-worker.js": "/DineAround/service-worker.js",
-    "static/css/main.67000b8e.chunk.css.map": "/DineAround/static/css/main.67000b8e.chunk.css.map",
+    "static/css/main.d14d7221.chunk.css.map": "/DineAround/static/css/main.d14d7221.chunk.css.map",
     "static/media/searchBar.css": "/DineAround/static/media/search_mobile.968708c4.jpg"
   }
 }
